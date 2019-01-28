@@ -83,13 +83,6 @@ We literally have [*hundreds of terraform modules*][terraform_modules] that are 
 {{- end }}
 {{ if has (ds "config") "related" }}
 
-## Share the Love 
-
-Like this project? Please give it a ★ on [our GitHub]({{ printf "https://github.com/%s" (ds "config").github_repo}})! (it helps us **a lot**) 
-
-Are you using this project or any of our other projects? Consider [leaving a testimonial][testimonial]. =)
-
-
 ## References
 
 For additional context, refer to some of these links. 
@@ -254,10 +247,6 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {{ end }}
 
-## Trademarks
-
-All other trademarks referenced herein are the property of their respective owners.
-
 ## About
 
 [![OSO DevOps][logo]][website]
@@ -310,10 +299,4 @@ Check out [our other projects][github], [follow us on twitter][twitter], or [hir
   [readme_footer_link]: {{ printf "https://cloudposse.com/readme/footer/link?repo=%s" (ds "config").github_repo }}
   [readme_commercial_support_img]: {{ printf "https://cloudposse.com/readme/commercial-support/img?repo=%s" (ds "config").github_repo }}
   [readme_commercial_support_link]: {{ printf "https://cloudposse.com/readme/commercial-support/link?repo=%s" (ds "config").github_repo }}
-  [share_twitter]: {{ printf "https://twitter.com/intent/tweet/?text=%s&url=https://github.com/%s" ((ds "config").name | regexp.Replace " " "+") (ds "config").github_repo }}
-  [share_linkedin]: {{ printf "https://www.linkedin.com/shareArticle?mini=true&title=%s&url=https://github.com/%s" ((ds "config").name | regexp.Replace " " "+") (ds "config").github_repo }}
-  [share_reddit]: {{ printf "https://reddit.com/submit/?url=https://github.com/%s" (ds "config").github_repo }}
-  [share_facebook]: {{ printf "https://facebook.com/sharer/sharer.php?u=https://github.com/%s" (ds "config").github_repo }}
-  [share_googleplus]: {{ printf "https://plus.google.com/share?url=https://github.com/%s" (ds "config").github_repo }}
-  [share_email]: {{ printf "mailto:?subject=%s&body=https://github.com/%s" ((ds "config").name | regexp.Replace " " "+") (ds "config").github_repo }}
   [beacon]: {{ printf "https://ga-beacon.cloudposse.com/UA-76589703-4/%s?pixel&cs=github&cm=readme&an=%s" (ds "config").github_repo (filepath.Base ((ds "config").github_repo)) }}

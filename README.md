@@ -200,13 +200,6 @@ Available targets:
 
 
 
-## Share the Love 
-
-Like this project? Please give it a ★ on [our GitHub](https://github.com/osodevops/build-harness)! (it helps us **a lot**) 
-
-Are you using this project or any of our other projects? Consider [leaving a testimonial][testimonial]. =)
-
-
 ## References
 
 For additional context, refer to some of these links. 
@@ -285,10 +278,6 @@ See [LICENSE](LICENSE) for full details.
 
 
 
-## Trademarks
-
-All other trademarks referenced herein are the property of their respective owners.
-
 ## About
 
 [![OSO DevOps][logo]][website]
@@ -335,10 +324,4 @@ Check out [our other projects][github], [follow us on twitter][twitter], or [hir
   [readme_footer_link]: https://cloudposse.com/readme/footer/link?repo=osodevops/build-harness
   [readme_commercial_support_img]: https://cloudposse.com/readme/commercial-support/img?repo=osodevops/build-harness
   [readme_commercial_support_link]: https://cloudposse.com/readme/commercial-support/link?repo=osodevops/build-harness
-  [share_twitter]: https://twitter.com/intent/tweet/?text=Build+Harness&url=https://github.com/osodevops/build-harness
-  [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=Build+Harness&url=https://github.com/osodevops/build-harness
-  [share_reddit]: https://reddit.com/submit/?url=https://github.com/osodevops/build-harness
-  [share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/osodevops/build-harness
-  [share_googleplus]: https://plus.google.com/share?url=https://github.com/osodevops/build-harness
-  [share_email]: mailto:?subject=Build+Harness&body=https://github.com/osodevops/build-harness
   [beacon]: https://ga-beacon.cloudposse.com/UA-76589703-4/osodevops/build-harness?pixel&cs=github&cm=readme&an=build-harness
