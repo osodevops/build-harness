@@ -15,21 +15,21 @@ license: "APACHE2"
 
 # Copyrights
 copyrights:
-  - name: "Cloud Posse, LLC"
-    url: "https://cloudposse.com"
-    year: "2016"
+  - name: "OSO DevOps"
+    url: "https://osodevops.io"
+    year: "2019"
 
 # Canonical GitHub repo 
-github_repo: cloudposse/build-harness
+github_repo: osodevops/build-harness
 
 # Badges to display
 badges:
   - name: "Build Status"
-    image: "https://travis-ci.org/cloudposse/build-harness.svg?branch=master"
-    url: "https://travis-ci.org/cloudposse/build-harness"
+    image: "https://travis-ci.com/osodevops/build-harness.svg?branch=master"
+    url: "https://travis-ci.com/osodevops/build-harness"
   - name: "Latest Release"
-    image: "https://img.shields.io/github/release/cloudposse/build-harness.svg"
-    url: "https://github.com/cloudposse/build-harness/releases/latest"
+    image: "https://img.shields.io/github/release/osodevops/build-harness.svg"
+    url: "https://github.com/osodevops/build-harness/releases/latest"
   - name: "Slack Community"
     image: "https://slack.cloudposse.com/badge.svg"
     url: "https://slack.cloudposse.com"
@@ -91,8 +91,8 @@ examples: |-
 quickstart: |-
   Here's how to get started...
 
-  1. `git clone https://github.com/cloudposse/build-harness.git` to pull down the repository
-  2. `make init` to initialize the [`build-harness`](https://github.com/cloudposse/build-harness/)
+  1. `git clone https://github.com/osodevops/build-harness.git` to pull down the repository
+  2. `make init` to initialize the [`build-harness`](https://github.com/osodevops/build-harness/)
 
 # Other files to include in this README from the project folder
 include:
@@ -100,15 +100,7 @@ include:
 
 # Contributors to this project
 contributors:
-  - name: "Erik Osterman"
-    github: "osterman"
-  - name: "Igor Rodionov"
-    github: "goruha"
-  - name: "Andriy Knysh"
-    github: "aknysh"
-  - name: "Sarkis"
-    github: "sarkis"
-  - name: "Alexander Babai"
-    github: "alebabai"
-  - name: "Jon Boulle"
-    github: "jonboulle"
+  - name: "Richard Gutkowski"
+    github: "richardgutkowski"
+  - name: "Sion Smith"
+    github: "sionsmith"
