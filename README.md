@@ -3,7 +3,7 @@
 
 [![Cloud Posse][logo]](https://cpco.io/homepage)
 
-# Build Harness [![Build Status](https://travis-ci.org/cloudposse/build-harness.svg?branch=master)](https://travis-ci.org/cloudposse/build-harness) [![Latest Release](https://img.shields.io/github/release/cloudposse/build-harness.svg)](https://github.com/cloudposse/build-harness/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
+# Build Harness [![Build Status](https://travis-ci.com/osodevops/build-harness.svg?branch=master)](https://travis-ci.com/osodevops/build-harness) [![Latest Release](https://img.shields.io/github/release/osodevops/build-harness.svg)](https://github.com/osodevops/build-harness/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
 
 
 This `build-harness` is a collection of Makefiles to facilitate building Golang projects, Dockerfiles, Helm charts, and more.
@@ -63,8 +63,8 @@ Run `make help` for a list of available targets.
 
 Here's how to get started...
 
-1. `git clone https://github.com/cloudposse/build-harness.git` to pull down the repository
-2. `make init` to initialize the [`build-harness`](https://github.com/cloudposse/build-harness/)
+1. `git clone https://github.com/osodevops/build-harness.git` to pull down the repository
+2. `make init` to initialize the [`build-harness`](https://github.com/osodevops/build-harness/)
 
 
 ## Examples
@@ -123,13 +123,13 @@ Available targets:
   geodesic/deploy                     Run a Jenkins Job to Deploy $(APP) with $(CANONICAL_TAG)
   git/aliases-update                  Update git aliases
   git/export                          Export git vars
+  git/submodules-update               Update submodules
   github/download-private-release     Download release from github
   github/download-public-release      Download release from github
   github/latest-release               Fetch the latest release tag from the GitHub API
   github/push-artifacts               Push all release artifacts to GitHub (Required: `GITHUB_TOKEN`)
   gitleaks/install                    Install gitleaks
   gitleaks/scan                       Scan current repository
-  git/submodules-update               Update submodules
   go/build                            Build binary
   go/build-all                        Build binary for all platforms
   go/clean                            Clean compiled binary
@@ -158,7 +158,6 @@ Available targets:
   helm/delete/failed                  Delete all failed releases in a `NAMESPACE` subject to `FILTER`
   helm/delete/namespace               Delete all releases in a `NAMEPSACE` as well as the namespace
   helm/delete/namespace/empty         Delete `NAMESPACE` if there are no releases in it
-  helmfile/install                    Install helmfile
   helm/install                        Install helm
   helm/repo/add                       Add $REPO_NAME from $REPO_ENDPOINT
   helm/repo/add-current               Add helm remote dev repos
@@ -171,16 +170,17 @@ Available targets:
   helm/repo/update                    Update repo info
   helm/serve/index                    Build index for serve helm charts
   helm/toolbox/upsert                 Install or upgrade helm tiller 
+  helmfile/install                    Install helmfile
   help                                Help screen
   help/all                            Display help for all targets
   help/short                          This help short screen
   jenkins/run-job-with-tag            Run a Jenkins Job with $(TAG)
   make/lint                           Lint all makefiles
   packages/delete                     Delete packages
-  packages/install/%                  Install package (e.g. helm, helmfile, kubectl)
   packages/install                    Install packages 
-  packages/reinstall/%                Reinstall package (e.g. helm, helmfile, kubectl)
+  packages/install/%                  Install package (e.g. helm, helmfile, kubectl)
   packages/reinstall                  Reinstall packages
+  packages/reinstall/%                Reinstall package (e.g. helm, helmfile, kubectl)
   packages/uninstall/%                Uninstall package (e.g. helm, helmfile, kubectl)
   readme                              Alias for readme/build
   readme/build                        Create README.md by building it from README.yaml
@@ -207,7 +207,7 @@ Available targets:
 
 ## Share the Love 
 
-Like this project? Please give it a ★ on [our GitHub](https://github.com/cloudposse/build-harness)! (it helps us **a lot**) 
+Like this project? Please give it a ★ on [our GitHub](https://github.com/osodevops/build-harness)! (it helps us **a lot**) 
 
 Are you using this project or any of our other projects? Consider [leaving a testimonial][testimonial]. =)
 
@@ -233,7 +233,7 @@ For additional context, refer to some of these links.
 
 **Got a question?**
 
-File a GitHub [issue](https://github.com/cloudposse/build-harness/issues), send us an [email][email] or join our [Slack Community][slack].
+File a GitHub [issue](https://github.com/osodevops/build-harness/issues), send us an [email][email] or join our [Slack Community][slack].
 
 [![README Commercial Support][readme_commercial_support_img]][readme_commercial_support_link]
 
@@ -268,7 +268,7 @@ Signup for [our newsletter][newsletter] that covers everything on our technology
 
 ### Bug Reports & Feature Requests
 
-Please use the [issue tracker](https://github.com/cloudposse/build-harness/issues) to report any bugs or file feature requests.
+Please use the [issue tracker](https://github.com/osodevops/build-harness/issues) to report any bugs or file feature requests.
 
 ### Developing
 
@@ -288,7 +288,7 @@ In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
 ## Copyrights
 
-Copyright © 2016-2018 [Cloud Posse, LLC](https://cloudposse.com)
+Copyright © 2019-2019 [OSO DevOps](https://osodevops.io)
 
 
 
@@ -345,21 +345,13 @@ Check out [our other projects][github], [follow us on twitter][twitter], [apply 
 
 ### Contributors
 
-|  [![Erik Osterman][osterman_avatar]][osterman_homepage]<br/>[Erik Osterman][osterman_homepage] | [![Igor Rodionov][goruha_avatar]][goruha_homepage]<br/>[Igor Rodionov][goruha_homepage] | [![Andriy Knysh][aknysh_avatar]][aknysh_homepage]<br/>[Andriy Knysh][aknysh_homepage] | [![Sarkis][sarkis_avatar]][sarkis_homepage]<br/>[Sarkis][sarkis_homepage] | [![Alexander Babai][alebabai_avatar]][alebabai_homepage]<br/>[Alexander Babai][alebabai_homepage] | [![Jon Boulle][jonboulle_avatar]][jonboulle_homepage]<br/>[Jon Boulle][jonboulle_homepage] |
-|---|---|---|---|---|---|
+|  [![Richard Gutkowski][richardgutkowski_avatar]][richardgutkowski_homepage]<br/>[Richard Gutkowski][richardgutkowski_homepage] | [![Sion Smith][sionsmith_avatar]][sionsmith_homepage]<br/>[Sion Smith][sionsmith_homepage] |
+|---|---|
 
-  [osterman_homepage]: https://github.com/osterman
-  [osterman_avatar]: https://github.com/osterman.png?size=150
-  [goruha_homepage]: https://github.com/goruha
-  [goruha_avatar]: https://github.com/goruha.png?size=150
-  [aknysh_homepage]: https://github.com/aknysh
-  [aknysh_avatar]: https://github.com/aknysh.png?size=150
-  [sarkis_homepage]: https://github.com/sarkis
-  [sarkis_avatar]: https://github.com/sarkis.png?size=150
-  [alebabai_homepage]: https://github.com/alebabai
-  [alebabai_avatar]: https://github.com/alebabai.png?size=150
-  [jonboulle_homepage]: https://github.com/jonboulle
-  [jonboulle_avatar]: https://github.com/jonboulle.png?size=150
+  [richardgutkowski_homepage]: https://github.com/richardgutkowski
+  [richardgutkowski_avatar]: https://github.com/richardgutkowski.png?size=150
+  [sionsmith_homepage]: https://github.com/sionsmith
+  [sionsmith_avatar]: https://github.com/sionsmith.png?size=150
 
 
 
@@ -382,16 +374,16 @@ Check out [our other projects][github], [follow us on twitter][twitter], [apply 
   [we_love_open_source]: https://cpco.io/we-love-open-source
   [module_development]: https://cpco.io/module-development
   [terraform_modules]: https://cpco.io/terraform-modules
-  [readme_header_img]: https://cloudposse.com/readme/header/img?repo=cloudposse/build-harness
-  [readme_header_link]: https://cloudposse.com/readme/header/link?repo=cloudposse/build-harness
-  [readme_footer_img]: https://cloudposse.com/readme/footer/img?repo=cloudposse/build-harness
-  [readme_footer_link]: https://cloudposse.com/readme/footer/link?repo=cloudposse/build-harness
-  [readme_commercial_support_img]: https://cloudposse.com/readme/commercial-support/img?repo=cloudposse/build-harness
-  [readme_commercial_support_link]: https://cloudposse.com/readme/commercial-support/link?repo=cloudposse/build-harness
-  [share_twitter]: https://twitter.com/intent/tweet/?text=Build+Harness&url=https://github.com/cloudposse/build-harness
-  [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=Build+Harness&url=https://github.com/cloudposse/build-harness
-  [share_reddit]: https://reddit.com/submit/?url=https://github.com/cloudposse/build-harness
-  [share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/cloudposse/build-harness
-  [share_googleplus]: https://plus.google.com/share?url=https://github.com/cloudposse/build-harness
-  [share_email]: mailto:?subject=Build+Harness&body=https://github.com/cloudposse/build-harness
-  [beacon]: https://ga-beacon.cloudposse.com/UA-76589703-4/cloudposse/build-harness?pixel&cs=github&cm=readme&an=build-harness
+  [readme_header_img]: https://cloudposse.com/readme/header/img?repo=osodevops/build-harness
+  [readme_header_link]: https://cloudposse.com/readme/header/link?repo=osodevops/build-harness
+  [readme_footer_img]: https://cloudposse.com/readme/footer/img?repo=osodevops/build-harness
+  [readme_footer_link]: https://cloudposse.com/readme/footer/link?repo=osodevops/build-harness
+  [readme_commercial_support_img]: https://cloudposse.com/readme/commercial-support/img?repo=osodevops/build-harness
+  [readme_commercial_support_link]: https://cloudposse.com/readme/commercial-support/link?repo=osodevops/build-harness
+  [share_twitter]: https://twitter.com/intent/tweet/?text=Build+Harness&url=https://github.com/osodevops/build-harness
+  [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=Build+Harness&url=https://github.com/osodevops/build-harness
+  [share_reddit]: https://reddit.com/submit/?url=https://github.com/osodevops/build-harness
+  [share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/osodevops/build-harness
+  [share_googleplus]: https://plus.google.com/share?url=https://github.com/osodevops/build-harness
+  [share_email]: mailto:?subject=Build+Harness&body=https://github.com/osodevops/build-harness
+  [beacon]: https://ga-beacon.cloudposse.com/UA-76589703-4/osodevops/build-harness?pixel&cs=github&cm=readme&an=build-harness

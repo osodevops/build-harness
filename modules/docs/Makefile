@@ -7,7 +7,8 @@ docs/deps::
 docs/targets.md: docs/deps
 	@( \
 		echo "## Makefile Targets"; \
-		echo '```'; \
+		echo "";\
+		echo '```make'; \
 		$(SELF) --no-print-directory --quiet --silent $(DEFAULT_HELP_TARGET) | sed $$'s,\x1b\\[[0-9;]*[a-zA-Z],,g'; \
 		echo '```'; \
 	) > $@
