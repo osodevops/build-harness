@@ -15,9 +15,7 @@
 {{(ds "config").description }}
 {{ end }}
 
----
-
-This project is part of our comprehensive ["SweetOps"](https://cpco.io/sweetops) approach towards DevOps. 
+--- 
 
 {{ if (file.Exists "main.tf") }}
 [![Terraform Open Source Modules](https://docs.cloudposse.com/images/terraform-open-source-modules.svg)][terraform_modules]
@@ -94,7 +92,7 @@ For additional context, refer to some of these links.
 
 **Got a question?**
 
-File a GitHub [issue]({{ printf "https://github.com/%s/issues" (ds "config").github_repo}}), send us an [email][email] or join our [Slack Community][slack].
+File a GitHub [issue]({{ printf "https://github.com/%s/issues" (ds "config").github_repo}}), send us an [email][email].
 
 [![README Commercial Support][readme_commercial_support_img]][readme_commercial_support_link]
 
@@ -103,26 +101,6 @@ File a GitHub [issue]({{ printf "https://github.com/%s/issues" (ds "config").git
 
 Are you interested in custom Terraform module development? Submit your inquiry using [our form][module_development] today and we'll get back to you ASAP.
 {{end}}
-
-## Contributing
-
-### Bug Reports & Feature Requests
-
-Please use the [issue tracker]({{ printf "https://github.com/%s/issues" (ds "config").github_repo}}) to report any bugs or file feature requests.
-
-### Developing
-
-If you are interested in being a contributor and want to get involved in developing this project or [help out](https://cpco.io/help-out) with our other projects, we would love to hear from you! Shoot us an [email][email].
-
-In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
-
- 1. **Fork** the repo on GitHub
- 2. **Clone** the project to your own machine
- 3. **Commit** changes to your own branch
- 4. **Push** your work back up to your fork
- 5. Submit a **Pull Request** so that we can review your changes
-
-**NOTE:** Be sure to merge the latest changes from "upstream" before making a pull request!
 
 {{ if has (ds "config") "copyrights" }}
 
@@ -279,16 +257,12 @@ Check out [our other projects][github], [follow us on twitter][twitter], or [hir
 [![Beacon][beacon]][website]
 
   [logo]: https://osodevops.io/assets/images/logo-purple-b3af53cc.svg
-  [docs]: https://cpco.io/docs
   [website]: https://osodevops.io/
   [github]: https://github.com/orgs/osodevops/
-  [jobs]: https://cpco.io/jobs
   [hire]: https://osodevops.io/contact/
   [linkedin]: https://www.linkedin.com/company/oso-devops
   [twitter]: https://twitter.com/osodevops
-  [testimonial]: https://cpco.io/leave-testimonial
-  [newsletter]: https://cpco.io/newsletter
-  [email]: https://cpco.io/email
+  [email]: https://osodevops.io/contact/
   [commercial_support]: https://cpco.io/commercial-support
   [we_love_open_source]: https://cpco.io/we-love-open-source
   [module_development]: https://cpco.io/module-development

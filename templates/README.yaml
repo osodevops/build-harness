@@ -24,9 +24,6 @@ badges:
   - name: "Latest Release"
     image: "https://img.shields.io/github/release/osodevops/build-harness.svg"
     url: "https://github.com/osodevops/build-harness/releases/latest"
-  - name: "Slack Community"
-    image: "https://slack.cloudposse.com/badge.svg"
-    url: "https://slack.cloudposse.com"
 related:
   - name: "Packages"
     description: "Cloud Posse installer and distribution of native apps"
