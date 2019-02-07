@@ -216,7 +216,6 @@ File a GitHub [issue](https://github.com/osodevops/build-harness/issues), send u
 
 
 
-
 ## Copyrights
 
 Copyright © 2019-2019 [OSO DevOps](https://osodevops.io)

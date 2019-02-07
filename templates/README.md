@@ -103,7 +103,6 @@ Are you interested in custom Terraform module development? Submit your inquiry u
 {{end}}
 
 {{ if has (ds "config") "copyrights" }}
-
 ## Copyrights
 
 {{ range $copyright := (ds "config").copyrights -}}
